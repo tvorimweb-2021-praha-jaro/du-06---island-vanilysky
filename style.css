@@ -1,0 +1,554 @@
+/*V textu bylo napsáno: Změna strany, aby to cele bylo hezci - ja jsem to pochopila tak, ze to mame rozdelit na vice stran. Ale asi jsem to pochopila spatne a mysleli jste to jinak :) kdyby to byl problem, tak to predelam samozrejme na jednu stranu :) */
+
+
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Merriweather, sans-serif;
+    background-color: #f5f5f5;   
+}
+
+.obal {
+    max-width: 960px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.strana-dve {
+    max-width: 960px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header {
+    background-image: linear-gradient(hsla(0 0% 0% / 0.3), hsla(0 0% 0% /0.3)), url(images/island-hlavicka.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+header h1 {
+    font-family: Raleway, sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3rem;
+    color: white;
+}
+
+.foto-obsah img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    
+}
+
+.uvod-text {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+blockquote {
+    font-style: italic;
+    opacity: 0.6;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.5rem 2rem 1.5rem 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(235, 230, 230);
+    font-family: Raleway, sans-serif;
+    color: rgb(172, 169, 169);
+    padding: 0.2rem;
+    font-size: 0.8rem;
+}
+
+nav a:hover {
+    background-color: rgb(35, 117, 223);
+    color: white;
+}
+
+section p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: Raleway, sans-serif;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.uvod {
+    margin-top: 3rem;
+}
+
+.dve {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.info-obrazek {
+    text-align: center;
+    font-size: 0.7rem;
+    color: rgb(151, 150, 150);
+    font-family: Raleway,sans-serif;
+    padding-bottom: 2rem;
+    line-height: normal;
+}
+
+.fotogalerie strong {
+    font-size: 0.8rem;
+    color: rgb(134, 133, 133);
+}
+
+.info-obrazek a {
+    color: rgb(151, 150, 150);
+}
+
+p strong {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+.fotogalerie img {
+    margin-top: 0;
+}
+
+.foto-galerie img {
+    width: 100%;
+}
+
+.foto-galerie {
+    margin: 0;
+}
+
+footer {
+    font-size: 11px;
+    color: rgb(145, 143, 143);
+    font-weight: bold;
+    padding: 1.5rem 1rem;
+    background-image: linear-gradient(180deg, rgba(158,157,164,1) 0%, rgba(189,188,192,1) 0%, rgba(210,208,211,1) 5%, rgba(235,234,230,1) 14%, rgba(236,234,234,1) 23%);
+}
+
+footer a {
+    color: grey;
+}
+
+h4 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+hr {
+    width: 70px;
+    color: rgb(74, 148, 233);
+    height: 4px;
+    background-color: rgb(74, 148, 233);
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.uvod-lomitko {
+    width: 70px;
+    height: 0.5px;
+    margin-left: auto;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    margin-bottom: 0;
+    opacity: 0.7;
+}
+
+
+.dalsistrana,
+.predchozistrana {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: Merriweather, sans-serif;
+    padding: 1rem;
+    color: rgb(88, 88, 88);
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 0;
+}
+
+.dalsistrana:hover,
+.predchozistrana:hover {
+    color: rgb(35, 117, 223);
+}
+
+@media screen and (min-width: 500px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    nav a {
+        display: flex;
+        padding: 0.3rem 3rem;
+        border: 1px solid rgb(235, 230, 230);
+        align-content: center;
+        font-size: 12px;
+    }
+
+    .navigace-uvod {
+        border-left: none;
+    }
+
+    .navigace-foto {
+        border-right: none;
+    }
+
+    .foto-obsah img {
+        max-width: 999px;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .galerie-obrazky {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .foto-galerie {
+        width: 50%;
+        height: auto;
+        position: relative;
+    }
+
+    .foto-galerie img:hover .skryty {
+        display: block;
+    }
+
+    footer {
+        display: inline-block;
+        padding: 0 0 1rem 1rem;
+        width: 100%;
+        max-width: 999px;
+        padding-top: 1rem;
+        
+    }
+
+    .uvod img {
+        position: relative;
+    }
+
+    .textvrohu {
+        position: relative;
+        text-align: right;
+        bottom: 30px;
+        padding-right: 1rem;
+        color: white;
+        opacity: 0.7;
+    }
+
+    .textvrohu a {
+        color: white;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        padding-bottom: 1rem;
+    }
+
+    .uvod-text {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    .autor {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+
+    hr {
+        height: 5px;
+    }
+
+    .dve {
+        margin-bottom: 4rem;
+        line-height: 1.8;
+    }
+
+    .predchozistrana {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 15px;
+    }
+
+    .dalsistrana {
+        margin-bottom: 1rem;
+        font-size: 15px;
+    }
+
+   .foto-galerie {
+       font-size: 0;
+       line-height: 0;
+   }
+
+    .foto-galerie img,
+    .skryty {
+        transition: all 0.3s ease-in-out;
+    }
+    .foto-galerie:hover img {
+        transform: scale(1.2,1.2);
+    }
+    .foto-galerie {
+        overflow: hidden;
+    }
+
+    .foto-galerie .skryty {
+        background-color: hsla(0 0% 0% / 0.4);;
+    }
+
+    .foto-galerie:hover .skryty {
+        opacity: 1;
+        transform: translateY(-50px);
+        font-size: 12px;
+        color: white;
+    }
+
+.skryty a {
+        opacity: 1;
+        color: white;
+        
+    }
+
+    .skryty strong {
+        color: white;
+        opacity: 1;
+    }
+
+    .skryty {
+        opacity: 0;
+        padding-bottom: 0;
+        display: hidden;
+        position: absolute;
+        left: 0;
+        right: 0.5rem;
+        background-color: hsla(0 0% 0% / 0.4);
+        width: 100%;
+        background-size: cover;
+        text-align: center;
+        padding: 0.7rem;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .obal {
+        position: absolute;
+        top: 400px;
+        left: 2rem;
+        right: 4rem;
+        background-color: white;
+        width: 960px;
+        box-shadow: 0 0 20px #a5a2a2;
+    }
+    
+    header {
+        padding: 4rem 2rem 7rem 2rem;
+    }
+
+    .uvod-text {
+        max-width: 700px;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .uvod-lomitko {
+        margin: auto;
+        width: 6rem;
+    }
+
+    nav {
+        margin-top: 3.5rem;
+        margin-left: 1.5rem;
+        display: inline-block;
+        height: 200px;
+        
+    }
+
+    nav a {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        padding-left: 0;
+        margin-left: 2rem;
+        margin-right: 3rem;
+        text-align: left;
+        width: 180px;
+
+    }
+
+    .uvod {
+        display: inline-block;
+        padding-bottom: 1rem;
+        margin-right: 2rem;
+        margin-top: 3rem;
+        font-size: 16px;
+    }
+
+    .foto-obsah img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        
+    }
+
+    .nav-uvod {
+        display: flex;
+    }
+    
+    header h1 {
+        font-size: 5rem;
+    }
+
+    .proc-jet h2 {
+        font-size: 35px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    hr {
+        width: 105px;
+        height: 5px;
+        margin-left: 0;
+    }
+
+    .proc-jet p {
+        width: 70%;
+        font-size: 16px;
+        margin-left: 2rem;
+    }
+
+    .co-videt h2 {
+        font-size: 35px;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        padding-left: 3rem;
+    }
+
+    .co-videt {
+        margin-left: 15rem;
+        font-size: 16px;
+        padding-right: 0;
+        margin-right: 1rem;
+        
+    }
+
+    .co-videt p {
+        padding-left: 3rem;
+        margin-top: 0;
+        width: 90%;
+        padding-right: 0;
+    }
+
+    .dalsistrana {
+        font-size: 15px;
+        margin-bottom: 1rem;
+        padding-top: 0;
+    }
+
+    footer {
+        margin-top: 87rem;
+        width: 100%;
+        background-color: #f5f5f5;
+        background-image: none;
+        max-width: 960px;
+        margin-left: 4rem;
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    .strana-dve {
+        max-width: 960px;
+        position: absolute;
+        top: 50px;
+        left: 2rem;
+        right: 2rem;
+        margin: auto;
+        line-height: 1.7;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: white;
+        max-height: 1400px;
+        box-shadow: 0 0 20px #a5a2a2;
+    }
+
+    .dve {
+        padding-top: 1rem;
+        width: 80%;
+        margin-left: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .dve p {
+        padding-left: 0;
+    }
+
+    .fotogalerie h2 {
+        font-size: 35px;
+        margin-left: 2rem;
+    }
+
+    .fotogalerie hr {
+        margin-bottom: 2rem;
+    }
+
+    .foto-galerie {
+        width: 33.33%;
+    }
+
+    .predchozistrana {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+}
+
